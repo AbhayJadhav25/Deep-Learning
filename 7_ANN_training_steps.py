@@ -4,7 +4,7 @@ Training Process Demo
 
 #import random to randomly initialize the weight
 import random
-
+import matplotlib.pyplot as plt
 print("="*70)
 print("Step 1 : Initial Data".center(70))
 print("="*70)
@@ -29,6 +29,9 @@ print("="*70)
 print("Training Started".center(70))
 print("="*70)
 
+steps = []
+predicted_list = []
+weight_list = []
 for step in range(1,13):
 
     print("="*70)
@@ -45,6 +48,9 @@ for step in range(1,13):
     print(f"Loss = {loss}")
     print(f"Updated weight = {weight}")
 
+    steps.append(step)
+    predicted_list.append(predicted_output)
+    weight_list.append(weight)
 
 print("="*70)
 print("Final Output".center(70))
@@ -55,3 +61,24 @@ output = x * weight
 print(f"Final Weight = {weight}")
 print(f"Final Prediction = {output}")
 print(f"Expected Output = {actual_output}")
+
+#Graph 1 : Prediction vs Actual
+actual_line = [actual_output] *len(steps)
+plt.figure()
+plt.plot(steps , predicted_list , marker = "o" , label = "Predicted Output")
+plt.plot(steps , actual_line , linestyle = "--" , label = "Actual Output")
+plt.title("Prediction Approaching Actual output")
+plt.xlabel("Steps")
+plt.ylabel("Value")
+plt.legend()
+plt.grid()
+plt.show()
+
+#Graph 2 : Weight Change
+plt.figure()
+plt.plot(steps , weight_list , marker = "o")
+plt.title("weight Adjustment during learning")
+plt.xlabel("Steps")
+plt.ylabel("Weight Value")
+plt.grid()
+plt.show()

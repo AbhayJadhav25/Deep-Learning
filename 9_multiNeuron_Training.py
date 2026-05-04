@@ -26,14 +26,14 @@ w_out1 = random.uniform(0,1)
 w_out2 = random.uniform(0,1)
 b_out  = random.uniform(0,1)
 
-learning_rate = 0.01
+learning_rate = 0.02
 
 print(f"{"="*20}Initial Parameter{"="*20}")
 print(f"Neuron 1 \n w11 = {w11:.2f}\tw12 = {w12:.2f}\tb1 = {b1:.2f}")
 print(f"Neuron 2 \n w21 = {w21:.2f}\tw22 = {w22:.2f}\tb2 = {b2:.2f}")
 print(f"Output Neuron \n w_out1 = {w_out1:.2f}\tw_out2 = {w_out2:.2f}\tBias = {b_out:.2f}")
 
-for i in range(0 , 50):
+for i in range(0 , 18):
     header(f"{"="*20} Step : {i+1} {"="*20}")
 
     z1 = (x1 * w11) + (x2 * w12) + b1

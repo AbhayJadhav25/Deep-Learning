@@ -1,7 +1,7 @@
 import numpy as np
 from sklearn.metrics import mean_absolute_error
 
-def MSE(y_actual , y_pred):
+def MAE(y_actual , y_pred):
     total_loss = 0
 
     for i in range(len(y_actual)):
@@ -12,7 +12,7 @@ def main():
     y_true = [1 , 0 , 1]
     y_pred = [0.9 , 0.2 , 0.8]
 
-    total_loss = MSE(y_true , y_pred)
+    total_loss = MAE(y_true , y_pred)
     print(f"Total Loss Using Formula = {total_loss:.2f}")
     
     total_loss = mean_absolute_error(y_true , y_pred)

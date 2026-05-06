@@ -93,3 +93,33 @@ print(f"Final Predicted Output = {final_Predicted_output:2f}")
 print(f"Final Error = {final_error:.2f}")
 print(f"Final Loss  = {final_loss:.2f}")
 print(f"Actual Output = {actual_output:.2f}")
+
+
+Total Deposit = 20000
+maintaince cut = 1000
+reaming Depost = 19000
+[prtekachy yachytun 200 rs cut kelet]
+Kartik - 4800
+Vabhav - 4800
+Aditya - 4800
+Mayur - 2300
+Abhay B. - 2300
+ ------------------
+Total = 19000
+
+April rent :
+Aditya - 0 
+Abhay - 800 (Aditya Deposit 5000 : rent : 2800 * 2 = 5600 - 4800 = 800)
+Pratik - 2800   
+Kartik - 0   
+Abhay Bhosale - 500 
+
+
+kakdun 5k return yetil 
+
+Deposit Distribution : 
+Vaibhav - 4800
+Kartik - 2000
+Mayur - 2300
+
+
